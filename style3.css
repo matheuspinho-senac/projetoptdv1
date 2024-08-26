@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #004a8d;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: rgb(255, 255, 255);
+    width: auto;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 35px;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input,
+form textarea {
+    padding: 15px;
+    padding-left: 1px;
+    padding-bottom: 0px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 1px;
+    font-size: 15px;
+    transition: all 0.5s;
+    width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 12px;
+    color: #999;
+    padding-left: 1px;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    transition: all 1s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+}
+
+form button:hover {
+    background: #f5f5f5;
+    color: #000000;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Documento do Curso</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h2>Formulário</h2>
+
+            <h1></h1>
+            
+            <form id="courseForm">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="course">Curso:</label>
+                        <input type="text" id="course" name="course" placeholder="Digite aqui o nome do curso..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="workload">Carga Horária do Curso:</label>
+                        <input type="number" id="workload" name="workload" placeholder="Digite aqui a carga horária..." min="1" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="eixo">Eixo/Segmento:</label>
+                        <input type="text" id="eixo" name="eixo" placeholder="Digite aqui o eixo/segmento..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo">Tipo:</label>
+                        <input type="text" id="tipo" name="tipo" placeholder="Digite aqui o tipo..." required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label for="uc">UC:</label>
+                        <input type="text" id="uc" name="uc" placeholder="Digite aqui a UC..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ch">CH:</label>
+                        <input type="text" id="ch" name="ch" placeholder="Digite aqui a CH..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="situAprendizagem">Situações de Aprendizagem:</label>
+                        <input type="number" id="situAprendizagem" name="situAprendizagem" placeholder="Digite aqui o número de situações..." required>
+                    </div>
+
+                <button type="submit">Avançar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
